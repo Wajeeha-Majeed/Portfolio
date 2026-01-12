@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 
 
 export default function Hero() {
+    const scrollToContact = () => {
+    const section = document.getElementById('contacts');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const [text] = useTypewriter({
     words: ["Front-End Developer", "React Developer", "UI Designer"],
     loop: true,
@@ -40,7 +47,7 @@ export default function Hero() {
             </p>
 
             <div className="d-flex flex-column flex-sm-row align-items-center align-items-lg-start gap-3 mt-4">
-              <button className="btn custom-btn btn-lg px-4 fw-bold">
+              <button onClick={scrollToContact} className="btn custom-btn btn-lg px-4 fw-bold">
                 Hire
               </button>
 
@@ -48,13 +55,13 @@ export default function Hero() {
                 <a href="#hero">
                   <i className="ri-facebook-circle-fill"></i>
                 </a>
-                <a href="#hero">
-                  <i className="ri-instagram-line"></i>
+                <a href="mailto:majeedwajeeha228@gmail.com?subject=Portfolio%20Contact">
+                  <i className="ri-mail-fill"></i>
                 </a>
-                <a href="#hero">
+                <a href="https://www.linkedin.com/in/wajeeha-majeed-a67a7737a/" target="_blank" rel="noopener noreferrer">
                   <i className="ri-linkedin-box-fill"></i>
                 </a>
-                <a href="#hero">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
                   <i className="ri-github-fill"></i>
                 </a>
               </div>

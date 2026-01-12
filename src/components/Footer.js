@@ -14,9 +14,9 @@ export default function Footer() {
         </ul>
         <ul className="footer-socials">
           <a href="#footer"><i className="ri-facebook-circle-fill"></i></a>
-          <a href="#footer"><i className="ri-instagram-line"></i></a>
-          <a href="#footer"><i className="ri-linkedin-box-fill"></i></a>
-          <a href="#footer"><i className="ri-github-fill"></i></a>
+          <a href="mailto:majeedwajeeha228@gmail.com?subject=Portfolio%20Contact"><i className="ri-mail-fill"></i></a>
+          <a href="https://www.linkedin.com/in/wajeeha-majeed-a67a7737a/"><i className="ri-linkedin-box-fill"></i></a>
+          <a href="https://github.com/"><i className="ri-github-fill"></i></a>
         </ul>
       </div>
     </section>
